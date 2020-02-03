@@ -8,11 +8,11 @@ def help
 end
 
 def play(songs)
-  puts "Please enter a song or number:"
+  puts "Please enter a song name or number:"
   input = gets.strip
   songs.each_with_index do |song, index|
     num = index + 1
-    if num.to_i == input.to_i
+    if song.include?(input) || num.to_s == input
       puts "Playing #{num}. #{song}"
     end
   end
