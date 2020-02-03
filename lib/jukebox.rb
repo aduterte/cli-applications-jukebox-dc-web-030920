@@ -14,6 +14,9 @@ def play(songs)
     num = index + 1
     if song.include?(input) || num.to_s == input
       puts "Playing #{num}. #{song}"
+    else
+      puts "Invalid input, please try again"
+      play(songs)
     end
   end
 end
