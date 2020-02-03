@@ -14,12 +14,12 @@ def play(songs)
     num = index + 1
     if song.include?(input)
       puts "Playing #{num}. #{song}"
-    
+
     elsif input.to_i >= 1 && input.to_i <= num
       puts "Playing #{num}. #{song}"
     else
       puts "Invalid input, please try again"
-    
+
     end
   end
 
