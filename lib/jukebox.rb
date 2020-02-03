@@ -17,7 +17,7 @@ def play(songs)
       return
     else
       puts "Invalid input, please try again"
-      play(songs)
+      return play(songs)
     end
   end
 
