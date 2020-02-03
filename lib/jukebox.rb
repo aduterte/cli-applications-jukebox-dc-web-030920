@@ -17,10 +17,10 @@ def play(songs)
       return
     else
       puts "Invalid input, please try again"
-
+      play(songs)
     end
   end
-  play(songs)
+  
 end
 
 def list(songs)
