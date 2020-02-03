@@ -15,9 +15,10 @@ def play(songs)
     if song.include?(input) || num.to_s == input
       puts "Playing #{num}. #{song}"
       return
-    else
+    elsif num > songs.count
       puts "Invalid input, please try again"
       return play(songs)
+    
     end
   end
 
