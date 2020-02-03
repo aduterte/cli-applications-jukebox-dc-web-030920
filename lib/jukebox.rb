@@ -12,12 +12,13 @@ def play(songs)
   input = gets.strip
   songs.each_with_index do |song, index|
     num = index + 1
-    if song.include?(input) || num.to_s == input
+    if song.include?(input)
       puts "Playing #{num}. #{song}"
-      return
-    elsif num > songs.count
+    
+    elsif input.to_i >= 1 && input.to_i <= num
+      puts "Playing #{num}. #{song}"
+    else
       puts "Invalid input, please try again"
-      return play(songs)
     
     end
   end
