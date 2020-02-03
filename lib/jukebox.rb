@@ -17,6 +17,7 @@ def play(songs)
 
     elsif input.to_i >= 1 && input.to_i <= songs.count
       puts "Playing #{num}. #{song}"
+      return
     else
       puts "Invalid input, please try again"
 
